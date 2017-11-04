@@ -2,6 +2,19 @@
 
 ## Getting Started
 
+### Install
+
+With CDN.
+
+```
+// CSS
+https://cdn.rawgit.com/tutorjs/simple-modal/master/src/css/simple-modal.css
+
+// Javascript
+https://cdn.rawgit.com/tutorjs/simple-modal/master/src/js/simple-modal.js
+
+```
+
 ### HTML
 
 ```html
@@ -15,7 +28,6 @@
       <h1> Hello World </h1>
     </div>
   </div>
-
 
 ```
 
