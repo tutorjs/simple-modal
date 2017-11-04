@@ -1,0 +1,58 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.show-modal {
+  padding: 10px 15px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.show-modal:hover {
+  box-shadow: 2px 2px 2px #ddd;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0, .4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 10px;
+  margin: 15% auto;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ddd;
+}
