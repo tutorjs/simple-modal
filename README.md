@@ -6,12 +6,25 @@
 
 With CDN.
 
+### Production
+
 ```
 // CSS
-https://cdn.rawgit.com/tutorjs/simple-modal/master/src/css/simple-modal.css
+https://cdn.rawgit.com/tutorjs/simple-modal/c5274140/src/css/simple-modal.css
 
 // Javascript
-https://cdn.rawgit.com/tutorjs/simple-modal/master/src/js/simple-modal.js
+https://cdn.rawgit.com/tutorjs/simple-modal/c5274140/src/js/simple-modal.js
+
+```
+
+### Development
+
+```
+// CSS
+https://rawgit.com/tutorjs/simple-modal/master/src/css/simple-modal.css
+
+// Javascript
+https://rawgit.com/tutorjs/simple-modal/master/src/js/simple-modal.js
 
 ```
 
