@@ -3,7 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Simple Modal</title>
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/simple-modal.css">
+  <style>   
+    
+    .container {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .show-modal {
+      padding: 10px 15px;
+      border: none;
+      background: #eee;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .show-modal:hover {
+      box-shadow: 2px 2px 2px #ddd;
+    }
+
+    .show-outher-modal {
+      padding: 10px 15px;
+      border: none;
+      background: #ddd;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .show-outher-modal:hover {
+      box-shadow: 2px 2px 2px #ddd;
+    }
+
+    pre {
+      background: #eee;
+    }
+
+  </style>
 </head>
 <body>
   
@@ -11,17 +47,67 @@
     <!-- button show modal -->
     <h1>Example Show Modal</h1>
     <button class="show-modal">Show Modal</button>
+    <button class="show-outher-modal">Show Outher Modal</button>
+
+    <pre>
+      <code>
+        
+        // Show Modal (Default Width 400px)
+        new SimpleModal({
+          modal: '.my-modal',
+          content: '.my-content',
+          trigger: '.show-modal',
+        })
+        
+        // Show Outher Modal (With 800px)
+        new SimpleModal({
+          modal: '.my-outher-modal',
+          content: '.my-outher-content',
+          trigger: '.show-outher-modal',
+          width: 800 // 800px
+        })
+
+      </code>
+    </pre>
+
   </div>
   
   <!-- modal element -->
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
+  <div class="my-modal">
+    <div class="my-content">
       <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro totam tempora expedita ipsa. Quas dolorem, dolor tenetur inventore, cum excepturi ea ratione unde id, numquam natus blanditiis provident suscipit dolorum.</p>  
     </div>
   </div>
 
-  <script src="src/js/index.js"></script>
+
+  <div class="my-outher-modal">
+    <div class="my-outher-content">
+      <h1>Halo Dunia</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro totam tempora expedita ipsa. Quas dolorem, dolor tenetur inventore, cum excepturi ea ratione unde id, numquam natus blanditiis provident suscipit dolorum.</p>  
+    </div>
+  </div>
+
+  <script src="src/js/simple-modal.js"></script>
+
+  <script>
+    
+    // My Modal
+    new SimpleModal({
+      modal: '.my-modal',
+      content: '.my-content',
+      trigger: '.show-modal'
+    })
+
+    // My Outher Modal
+    new SimpleModal({
+      modal: '.my-outher-modal',
+      content: '.my-outher-content',
+      trigger: '.show-outher-modal',
+      width: 800 // width 800px
+    })
+
+  </script>
 
 </body>
 </html>
