@@ -32,11 +32,19 @@
     return spanClose;
   }
 
+  function createClear() {
+    var clear = document.createElement('div');
+    clear.classList.add('clear');
+    return clear;
+  }
+
   function configModal(options) {
   
     this.options = Object.assign({}, options);
 
     this.width = this.options.width || 400;
+
+    this.background = this.options.background || '#FFF';
 
     this.wrapModalContent = this.wrapModalContent.bind(this);
   
@@ -74,9 +82,11 @@
     var fragmentModalContent = document.createDocumentFragment();
     var modalContent = createModalContent();
     modalContent.style.width = this.width + 'px';
+    modalContent.style.background = this.background;
 
     Array.prototype.forEach.call(children, function(e) {  
       modalContent.appendChild(createSpanClose());
+      modalContent.appendChild(createClear());
       modalContent.appendChild(e);
       fragmentModalContent.appendChild(modalContent);
     });
