@@ -28,7 +28,6 @@ body {
 }
 
 .modal-content {
-  background: #fff;
   padding: 10px;
   margin: 15% auto;
 }
@@ -42,4 +41,8 @@ body {
 
 .close:hover {
   color: #ddd;
+}
+
+.clear {
+  clear: both;
 }
