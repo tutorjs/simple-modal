@@ -1,0 +1,9 @@
+{
+  "name": "simple-modal",
+  "version": "0.1.0",
+  "description": "Simple Modal",
+  "main": "index.js",
+  "repository": "https://github.com/tutorjs/simple-modal.git",
+  "author": "adiatma <adiatma9024@gmail.com>",
+  "license": "MIT"
+}

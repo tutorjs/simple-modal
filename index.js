@@ -1,0 +1,1 @@
+module.exports = reqiure('./src/js/index.js');
