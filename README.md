@@ -62,10 +62,11 @@ https://rawgit.com/tutorjs/simple-modal/master/src/js/simple-modal.js
   new SimpleModal({
     modal: '.your-modal-selector', // root class selector
     content: '.your-modal-content-selector', // children of modal
-    trigger: '.your-trigger-selector' // button action
+    trigger: '.your-trigger-selector', // button action
+    width: 800, // optional but default 400px
+    background: '#f2f2f2', // optional by default #fff
   })
 
 ```
-
 
 Thanks.
