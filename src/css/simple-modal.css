@@ -4,8 +4,8 @@
 */
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -43,6 +43,8 @@ body {
   color: #ddd;
 }
 
-.clear {
+.clear::after {
+  content: " ";
   clear: both;
+  display: table;
 }

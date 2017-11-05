@@ -19,40 +19,44 @@
     return element.querySelectorAll(selector);
   }
 
-  function createModalContent() {
+  function createModalContentElement() {
     var modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
     return modalContent;
   }
 
-  function createSpanClose() {
+  function createSpanCloseElement() {
     var spanClose = document.createElement('span');
     spanClose.classList.add('close');
     spanClose.innerHTML = '&times;';
     return spanClose;
   }
 
-  function createClear() {
+  function createClearElement() {
     var clear = document.createElement('div');
     clear.classList.add('clear');
     return clear;
   }
 
   function configModal(options) {
-  
+    
+    // Get all options
     this.options = Object.assign({}, options);
 
+    // Get width options
     this.width = this.options.width || 400;
 
+    // Get background options
     this.background = this.options.background || '#FFF';
 
     this.wrapModalContent = this.wrapModalContent.bind(this);
   
-    this.makeModal();
+    // render modal
+    this.renderModal();
   
   };
 
-  configModal.prototype.makeModal = function makeModal() {
+  configModal.prototype.renderModal = function renderModal() {
     
     // Add class modal
     var modal = el(this.options.modal);
@@ -80,13 +84,15 @@
 
   configModal.prototype.wrapModalContent = function wrapModalContent(children) {
     var fragmentModalContent = document.createDocumentFragment();
-    var modalContent = createModalContent();
+    var modalContent = createModalContentElement();
+
+    // Styling
     modalContent.style.width = this.width + 'px';
     modalContent.style.background = this.background;
 
     Array.prototype.forEach.call(children, function(e) {  
-      modalContent.appendChild(createSpanClose());
-      modalContent.appendChild(createClear());
+      modalContent.appendChild(createSpanCloseElement());
+      modalContent.appendChild(createClearElement());
       modalContent.appendChild(e);
       fragmentModalContent.appendChild(modalContent);
     });
