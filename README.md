@@ -1,5 +1,9 @@
 # Simple Modal
 
+[![GitHub issues](https://img.shields.io/github/issues/tutorjs/simple-modal.svg?style=flat-square)](https://github.com/tutorjs/simple-modal/issues)
+[![GitHub forks](https://img.shields.io/github/forks/tutorjs/simple-modal.svg?style=flat-square)](https://github.com/tutorjs/simple-modal/network)
+[![GitHub stars](https://img.shields.io/github/stars/tutorjs/simple-modal.svg?style=flat-square)](https://github.com/tutorjs/simple-modal/stargazers)
+
 ## Getting Started
 
 ### Install
